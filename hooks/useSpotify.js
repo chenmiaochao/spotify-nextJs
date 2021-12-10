@@ -15,7 +15,7 @@ function useSpotify() {
         //If refrsh token failed,  sign in again
         signIn();
       }
-
+      // console.log("useSpotify session", session.user.accessToken);
       spotifyApi.setAccessToken(session.user.accessToken);
     }
   }, [session]);
